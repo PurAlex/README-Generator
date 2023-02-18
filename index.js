@@ -34,19 +34,19 @@ const questions = [
     {
         message: "What command should be run to install dependencies?",
         type: "list",
-        name: 'dependencies',
+        name: 'installation',
         choices: ["npm i"],
     },
     {
-    message: 'What command should be run to run tests?',
-    type: 'list',
-    name: 'run',
-    choices: ['npm test'],
+        message: 'What command should be run to run tests?',
+        type: 'list',
+        name: 'test',
+        choices: ['npm test'],
     },
     {
         message: 'What does the user need to know about using the repo?',
         type: 'input',
-        name: 'repo',
+        name: 'usage',
     },
     {
         message: 'What does the user need to know about contributing to the repo?',
@@ -56,12 +56,17 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    fs.writeFile('README.md',data, err => {
+        err ? console.log(err) : console.log("Success!")
+});
+    
 }
 
 // function to initialize program
 function init() {
     const responses = inquirer.prompt(questions);
+    
 }
 
 // function call to initialize program
