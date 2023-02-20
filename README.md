@@ -1,7 +1,7 @@
 # README-Generator
 
   ## Description
-  Generate a readme 
+  This project is a readme generator which will generate a readme using user input. This project uses JavaScript and Node.js.
 
   ## Table of Contents
     *[Installation](#installation)
@@ -12,22 +12,22 @@
     *[Questions](#questions)
 
   ## Installation
-  npm i
+  To install the neccesary dependencies use npm i.
 
   ## Usage
-  Fork and pull request
+  To run this application use the command `node index.js`
 
   ## License 
   MIT
 
   ## Contributing
-  Pull and fork request
+  For the repo and then submit a pull request.
 
   ## Tests
-  npm test
+  To run tests run the command npm test.
 
   ## Questions
   
   If you have any questions about the repo, open an issue or contact me directly 
-  at purAlex. You can find more of my work at nicky-nico-1998@outlook.com
+  at PurAlex. You can find more of my work at nicky-nico-1998@outlook.com
 

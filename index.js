@@ -4,10 +4,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = 
-// inquirer
-//     .prompt(
-        [
+const questions = [
     {
         message: "What is your GitHub username?",
         type: "input",
@@ -35,16 +32,14 @@ const questions =
         choices: ["MIT", "Apache License 2.0", "GNU General Public License v3.0", "BSD-2-Clause", "BSD-3-Clause"],
     },
     {
-        message: "What command should be run to install dependencies?",
-        type: "list",
+        message: "What command should be run to install dependencies? (npm i)",
+        type: "input",
         name: 'installation',
-        choices: ["npm i"],
     },
     {
-        message: 'What command should be run to run tests?',
-        type: 'list',
+        message: 'What command should be run to run tests? (npm test)',
+        type: 'input',
         name: 'test',
-        choices: ['npm test'],
     },
     {
         message: 'What does the user need to know about using the repo?',
