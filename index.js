@@ -4,7 +4,10 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [
+const questions = 
+// inquirer
+//     .prompt(
+        [
     {
         message: "What is your GitHub username?",
         type: "input",
@@ -56,18 +59,23 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(data) {
-    fs.writeFile('README.md',data, err => {
+function writeToFile(filename,data) {
+       fs.writeFile(filename, data, (err) =>{
         err ? console.log(err) : console.log("Success!")
-});
+       })
+
     
 }
 
 // function to initialize program
 function init() {
-    const responses = inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    .then(data =>{
+        writeToFile('README.md', generateMarkdown(data));
+    });
     
 }
 
 // function call to initialize program
-init();
+init()
+
