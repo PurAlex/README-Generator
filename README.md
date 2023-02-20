@@ -1,7 +1,7 @@
-# README-Generator
+# README-Generaotr
 
   ## Description
-  This project is a readme generator which will generate a readme using user input. This project uses JavaScript and Node.js.
+  afsdf
 
   ## Table of Contents
     *[Installation](#installation)
@@ -12,19 +12,19 @@
     *[Questions](#questions)
 
   ## Installation
-  To install the neccesary dependencies use npm i.
+  adsfsdf
 
   ## Usage
-  To run this application use the command `node index.js`
+  asdfdsf
 
   ## License 
-  MIT
+  undefined
 
   ## Contributing
-  For the repo and then submit a pull request.
+  dsfsadfsdf
 
   ## Tests
-  To run tests run the command npm test.
+  asdfsadf
 
   ## Questions
   

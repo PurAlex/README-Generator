@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License 
-  ${data.license}
+  ${licenseBadge(data)}
 
   ## Contributing
   ${data.contributing}
@@ -37,3 +37,25 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+
+function licenseBadge(data){
+
+  const licenseType = data.license[0];
+  let license;
+
+  if (licenseType === "MIT"){
+    license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  };
+  if (licenseType === "Apache License 2.0"){
+    license = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+  };
+  if (licenseType === "GNU General Public License v3.0"){
+    license = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+  };
+  if (licenseType === "BSD-2-Clause"){
+    license = "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
+  };
+  if (license === "BSD-3-Clause"){
+    license = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+  }
+}
