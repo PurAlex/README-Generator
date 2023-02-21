@@ -1,8 +1,8 @@
-# README-Generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# asdf
+undefined
 
   ## Description
-  This project was created to dynamically generate a professional README.md file from a user's input using **Inquirer package**.
+  asdf
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,23 +13,23 @@
   * [Questions](#questions)
 
   ## Installation
-  To install the neccesary dependencies run the command `npm i`.
+  asdf
 
   ## Usage
-  To use this application use the command `node index.js`.
+  asdf
 
   ## License 
   
   This project is licensed under the MIT license
 
   ## Contributing
-  To contribute for this repo use fork and pull request.
+  asdf
 
   ## Tests
-  To run tests, run the command `npm test`.
+  asdf
 
   ## Questions
   
   If you have any questions about the repo, open an issue or contact me directly 
-  at nicky-nico-1998@outlook.com. You can find more of my work at PurAlex
+  at adsf. You can find more of my work at [PurAlex](https://github.com/PurAlex)
 
