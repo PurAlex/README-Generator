@@ -57,9 +57,7 @@ const questions = [
 function writeToFile(filename,data) {
        fs.writeFile(filename, data, (err) =>{
         err ? console.log(err) : console.log("Success!")
-       })
-
-    
+       });
 }
 
 // function to initialize program
@@ -68,7 +66,6 @@ function init() {
     .then(data =>{
         writeToFile('README.md', generateMarkdown(data));
     });
-    
 }
 
 // function call to initialize program
